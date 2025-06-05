@@ -1,3 +1,4 @@
+// For initializing Header
 function initializeHeader() {
   const menu = document.querySelector("#menu");
   const close = document.querySelector("#close");
@@ -27,6 +28,7 @@ function initializeHeader() {
 
 initializeHeader();
 
+// Script for Hovering Cards
 function setupHoverCard(cardId, summaryHTML, detailHTML) {
   const card = document.getElementById(cardId);
   const text = card.querySelector(".card-text");
