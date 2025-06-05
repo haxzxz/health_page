@@ -466,7 +466,7 @@ header.sticky {
 }
 */
 
-/* Card Animation */
+/* Card Animation Hovering */
 .week-schedule .container .card {
   flex: 0;
   margin: auto;
@@ -503,7 +503,7 @@ header.sticky {
   font-weight: 700;
 }
 
-/* Medic Schedule */
+/* Medic Schedule Style*/
 .medic-schedule {
   display: flex;
   flex-direction: column;
