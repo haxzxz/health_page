@@ -340,6 +340,7 @@ header.sticky {
   justify-content: center;
   align-items: center;
   background-color: #D9D9D9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
   border-radius: 10px;
 }
@@ -380,6 +381,7 @@ header.sticky {
   align-items: center;
   padding: 10px 10px;
   background-color: var(--primary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   min-width: 158px;
   min-height: 36px;
@@ -400,6 +402,7 @@ header.sticky {
   max-width: 158px;
   min-height: 191px;
   background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   background-repeat: no-repeat;
   background-size: 158px 191px cover;
   border-radius: 15px;
@@ -511,7 +514,8 @@ header.sticky {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  min-height: 60vh;
+  min-height: 160vh;
+  padding: 20px;
 }
 
 .medic-schedule #header {
@@ -534,6 +538,7 @@ header.sticky {
   width: 100%;
   height: 759px;
   width: 1200px;
+  min-height: 80vh;
 }
 
 .medic-schedule .container-table table {
@@ -550,11 +555,12 @@ header.sticky {
   padding: 10px;
 }
 
-.medic-schedule .container-table table #capsule{
+.medic-schedule .container-table table #capsule {
   font-size: 24px;
   margin: auto;
   text-align: center;
   background-color: var(--primary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 15px;
   color: #ffffff;
@@ -564,6 +570,7 @@ header.sticky {
 
 .medic-schedule .container-table table #doc-info {
   background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
@@ -579,6 +586,7 @@ header.sticky {
 .medic-schedule .container-table table #cell-time {
   text-align: center;
   background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   min-height: 75px;
   min-width: 206px;
   border-radius: 15px;
@@ -593,10 +601,11 @@ header.sticky {
 
 .medic-schedule .container-table #patient-info {
   background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
-.medic-schedule .container-table table #patient-info p{
+.medic-schedule .container-table table #patient-info p {
   font-size: 14px;
   display: flex;
   gap: 5px;
@@ -609,12 +618,13 @@ header.sticky {
   padding-left: 20px;
 }
 
-.medic-schedule .container-table table #row-3 #patient-info{
+.medic-schedule .container-table table #row-3 #patient-info {
   font-size: 12px;
 }
 
 .medic-schedule .container-table table #row-6 #rest-day {
   background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin: 0;
 }
@@ -648,3 +658,317 @@ header.sticky {
   border: 2px solid var(--primary-color);
 }
 
+/* Other Health Services Styling */
+
+.oth-health {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.oth-health>#title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oth-health #title p {
+  font-size: 55px;
+  font-weight: 700;
+  padding: 50px;
+}
+
+.oth-health>#title span {
+  color: var(--primary-color);
+}
+
+.oth-health .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 1700px;
+  gap: 20px;
+}
+
+.oth-health .container .col-1 {
+  height: 100%;
+  width: 100%;
+  height: 1534px;
+  width: 541px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.oth-health .container .col-1 .box-tooth {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  height: 1094px;
+  width: 541px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.oth-health .container .col-1 .mini-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box {
+  background-color: #d9d9d9;
+  padding: 10px;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box:nth-child(2) {
+  height: 350px;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box .title {
+  margin: auto;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box #red {
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box em {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box .req {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 10px;
+}
+
+.oth-health .container .col-1 .mini-grid .gray-box .req #desc {
+  font-size: 16px;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box {
+  top: -70px;
+  position: relative;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  margin: auto;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box .floating-box {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  bottom: -60px;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box .floating-box #reminder {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box .desc {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  gap: 4px;
+  padding: 35px 35px;
+  border-radius: 15px;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box .desc #desc {
+  position: relative;
+}
+
+.oth-health .container .col-1 .box-rabies {
+  height: 100%;
+  width: 100%;
+  height: 460px;
+  width: 541px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.oth-health .container .col-1 .box-rabies {
+  padding: 20px;
+}
+
+.oth-health .container .col-1 .box-rabies .gray-box {
+  text-align: center;
+  position: relative;
+  top: -15px;
+  padding: 20px;
+}
+
+.oth-health .container #desc #title {
+  font-size: 55px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.oth-health .container #desc span {
+  color: var(--primary-color);
+}
+
+.oth-health .container #desc #info {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 3px 10px;
+  line-height: 30px;
+}
+
+.oth-health .container .col-1 h4 {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.oth-health .container .col-2 {
+  height: 100%;
+  width: 100%;
+  height: 1534px;
+  width: 573px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.oth-health .container .col-2 .mini-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.oth-health .container .col-2 .box-tetanus .mini-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.oth-health .container .col-2 .box-hiv .mini-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  align-content: center;
+}
+
+.oth-health .container .col-2 .gray-box {
+  background-color: #d9d9d9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+.oth-health .container .col-2 .box-hiv .red-container {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.oth-health .container .col-2 .mini-grid #red {
+  color: var(--primary-color);
+}
+
+.oth-health .container .col-2 .mini-grid .gray-box p {
+  line-height: 30px;
+}
+
+.oth-health .container .col-2 .other p {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.oth-health .container .col-2 .other span {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.oth-health .container .col-2 .other em {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.oth-health .container .col-2 .red-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.oth-health .container .col-2 .red-container #red-box {
+  background-color: var(--primary-color);
+  padding: 5px 30px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+
+.oth-health .container .col-2 .red-container #desc {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.oth-health .container .col-2 .box-dots {
+  height: 100%;
+  width: 100%;
+  min-height: 550px;
+  width: 573px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.oth-health .container .col-2 .box-tetanus {
+  height: 100%;
+  width: 100%;
+  min-height: 396px;
+  width: 573px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.oth-health .container .col-2 .box-hiv {
+  height: 100%;
+  width: 100%;
+  height: 560 px;
+  width: 573px;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
