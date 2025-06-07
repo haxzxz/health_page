@@ -561,7 +561,7 @@ header.sticky {
   text-align: center;
   background-color: var(--primary-color);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
   color: #ffffff;
   display: flex;
