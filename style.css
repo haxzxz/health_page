@@ -688,19 +688,15 @@ header.sticky {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 1700px;
   gap: 20px;
 }
 
 .oth-health .container .col-1 {
-  height: 100%;
   width: 100%;
-  height: 1534px;
   width: 541px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -708,7 +704,6 @@ header.sticky {
   height: 100%;
   width: 100%;
   padding: 20px;
-  height: 1094px;
   width: 541px;
   border: 1px solid #000000;
   border-radius: 15px;
@@ -727,10 +722,6 @@ header.sticky {
   height: 100%;
   width: 100%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.oth-health .container .col-1 .mini-grid .gray-box:nth-child(2) {
-  height: 350px;
 }
 
 .oth-health .container .col-1 .mini-grid .gray-box .title {
@@ -762,24 +753,11 @@ header.sticky {
 }
 
 .oth-health .container .col-1 .box-tooth>.gray-box {
-  top: -70px;
-  position: relative;
   display: flex;
-  gap: 20px;
   justify-content: start;
   align-items: start;
   flex-direction: column;
-  margin: auto;
-}
-
-.oth-health .container .col-1 .box-tooth>.gray-box .floating-box {
-  padding: 10px 15px;
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin-bottom: 15px;
-  position: relative;
-  bottom: -60px;
+  margin: 12px auto auto;
 }
 
 .oth-health .container .col-1 .box-tooth>.gray-box .floating-box #reminder {
@@ -789,6 +767,7 @@ header.sticky {
 }
 
 .oth-health .container .col-1 .box-tooth>.gray-box .desc {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #d9d9d9;
@@ -796,6 +775,17 @@ header.sticky {
   gap: 4px;
   padding: 35px 35px;
   border-radius: 15px;
+}
+
+.oth-health .container .col-1 .box-tooth>.gray-box>.desc .floating-box {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 15px;
 }
 
 .oth-health .container .col-1 .box-tooth>.gray-box .desc #desc {
@@ -848,14 +838,12 @@ header.sticky {
 }
 
 .oth-health .container .col-2 {
-  height: 100%;
   width: 100%;
-  height: 1534px;
   width: 573px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 40px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .oth-health .container .col-2 .mini-grid {
@@ -945,7 +933,7 @@ header.sticky {
 }
 
 .oth-health .container .col-2 .box-dots {
-  height: 100%;
+  flex: 1;
   width: 100%;
   min-height: 550px;
   width: 573px;
@@ -955,7 +943,7 @@ header.sticky {
 }
 
 .oth-health .container .col-2 .box-tetanus {
-  height: 100%;
+  flex: 1;
   width: 100%;
   min-height: 396px;
   width: 573px;
@@ -965,7 +953,7 @@ header.sticky {
 }
 
 .oth-health .container .col-2 .box-hiv {
-  height: 100%;
+  flex: 1;
   width: 100%;
   height: 560 px;
   width: 573px;
