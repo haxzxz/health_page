@@ -120,3 +120,65 @@ setupHoverCard(
   `<div>${arrowSVG} <strong>Rest Day</strong><div>`,
   `<em>(no consultation on weekends)</em`
 )
+
+function setupHoverCard(cardId, summaryHTML, detailHTML) {
+  const card = document.getElementById(cardId);
+  const text = card.querySelector(".card-text");
+  text.innerHTML = summaryHTML;
+
+  card.addEventListener("mouseenter", () => {
+    text.innerHTML = detailHTML;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    text.innerHTML = summaryHTML;
+  });
+}
+
+function setupClickCard(cardId, summaryHTML, detailHTML) {
+  const card = document.getElementById(cardId);
+  const text = card.querySelector(".card-text");
+  let showingDetail = false;
+
+  text.innerHTML = summaryHTML;
+
+  card.addEventListener("click", () => {
+    if (showingDetail) {
+      text.innerHTML = summaryHTML;
+    } else {
+      text.innerHTML = detailHTML;
+    }
+    showingDetail = !showingDetail;
+  });
+}
+
+function setupToggleContent(buttonId, contentId, originalHTML, newHTML) {
+  const button = document.getElementById(buttonId);
+  const content = document.getElementById(contentId);
+  let showingOriginal = true;
+
+  content.innerHTML = originalHTML;
+
+  button.addEventListener("click", () => {
+    content.classList.add("fade-out");
+
+    setTimeout(() => {
+      content.innerHTML = showingOriginal ? newHTML : originalHTML;
+      content.classList.remove("fade-out");
+      showingOriginal = !showingOriginal;
+    }, 400); // duration matches CSS transition
+  });
+}
+
+// Call the function with your content
+setupToggleContent(
+  "toggleBtn",
+  "content",
+  `<p>This is the original content.</p>`,
+  `<h2>New Content</h2><p>This content has replaced the original section.</p>`
+);
+
+setupToggleContent(
+  "toggleBtn",
+  
+)

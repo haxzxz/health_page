@@ -205,6 +205,7 @@ header.sticky {
 }
 
 /* Reusables */
+
 .solid-button {
   border: none;
   border-radius: 50vh;
@@ -216,7 +217,39 @@ header.sticky {
 
 .solid-button:hover {
   background-color: var(--primary-color-hover);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  cursor: pointer;
 }
+
+/*
+.solid-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+    background-color: #eb0000;
+    border-radius: 50vw;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.solid-button a {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 1vw 2vw;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.solid-button:hover {
+    background-color: #B3291B;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+*/
 
 /* Health Page*/
 
@@ -960,4 +993,356 @@ header.sticky {
   padding: 20px;
   border: 1px solid #000000;
   border-radius: 15px;
+}
+
+/* Health Activities Styling */
+
+.health-act {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.health-act > .title {
+  padding: 50px;
+}
+
+.health-act > .title span {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.health-act .title #red {
+  color: var(--primary-color);
+}
+
+.health-act .title strong {
+  color: var(--primary-color);
+}
+
+.health-act .card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 15px;
+  min-width: 1120px;
+}
+
+.health-act .card-container .solid-button {
+  position: relative;
+  right: -75%;
+}
+
+.health-act .card-container .col-1 {
+  display: flex;
+  align-items: center;
+}
+
+.health-act .card-container .col-2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .card-container .card-1-1,
+.health-act .card-container .card-2-1,
+.health-act .card-container .card-2-2 {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  width: 570px;
+  overflow: hidden;
+}
+
+.health-act .card-container .col-1 .card-1-1 img {
+  height: 545px;
+  width: 570px;
+}
+
+.health-act .card-container .col-2 .card-2-1 img {
+  height: 210px;
+  width: 570px;
+}
+
+.health-act .card-container .col-2 .card-2-2 img {
+  height: 210px;
+  width: 570px;
+}
+
+.health-act .card-container img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.health-act .card-container #desc {
+  padding: 15px 20px;
+}
+
+.health-act .card-container #title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Reusable Back Button*/
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
+  /* x = &times; */
+}
+
+.close-btn:hover {
+  color: var(--primary-color-hover);
+}
+
+/* Modal Style Modal-1*/
+
+/*
+.health-act .modal-container#modal-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+*/
+.health-act .modal-container#modal-1 .header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-1 .modal-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  min-width: 1120px;
+  padding: 20px;
+}
+
+.health-act .modal-container#modal-1 .img-content {
+  width: 100%;
+  width: 482px;
+  height: 100%;
+  height: 334px;
+}
+
+.health-act .modal-container#modal-1 .img-content .title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: baseline; 
+  line-height: 1.2;        
+  position: relative;
+  z-index: 1;
+  gap: 10px;
+}
+
+.health-act .modal-container#modal-1 .img-content p {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.health-act .modal-container#modal-1 .img-content span {
+  color: var(--primary-color);
+}
+
+.health-act .modal-container#modal-1 img {
+  height: 100%;
+  width: 100%;
+  height: 334px;
+  width: 482px;
+  border-radius: 15px;
+}
+
+.health-act .modal-container#modal-1 .content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.health-act .modal-container#modal-1 .content h3 {
+  padding: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+
+.health-act .modal-container#modal-1 .content .list span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  font-size: 14px;
+}
+
+.health-act .modal-container#modal-1 .content .grid {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 310px 100px;
+  justify-content: center;
+  align-items: center;
+  min-height: 340px;
+  position: relative;
+}
+
+.health-act .modal-container#modal-1 .content .box-2 {
+  padding-left: 20px;
+}
+
+.health-act .modal-container#modal-1 .content .box-3 {
+  position: absolute;
+  bottom: 10%;
+  grid-column: span 2;
+}
+
+.health-act .modal-container#modal-1 .content .box {
+  background-color: #d9d9d9;
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  text-align: justify;
+}
+
+.health-act .modal-container#modal-1 .content .box-1 .box .red-box {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+}
+
+.health-act .modal-container#modal-1 .content .box-2 .box .red-box {
+  position: absolute;
+  top: -10%;
+  left: 40%;
+}
+
+.health-act .modal-container#modal-1 .content .box-3 .box .red-box {
+  position: absolute;
+  top: 25%;
+  left: -3%;
+}
+
+/* Modal Style Modal-2 */
+
+.health-act .modal-container#modal-2 {
+  width: 100%;
+  width: 1120px;
+}
+
+.health-act .modal-container#modal-2 .header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-2 .modal-content {
+  display: grid;
+  grid-template-columns: 500px 600px;
+  grid-template-rows: 1fr 60px 100px;
+  padding: 20px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .header {
+  grid-row: 1/1;
+  grid-column: 1/1;
+}
+
+.health-act .modal-container#modal-2 .modal-content .title {
+  grid-row: 2 / -2;
+  grid-column: 1 / -1;
+}
+
+.health-act .modal-container#modal-2 .modal-content .info {
+  grid-row: 3 / -2;
+  grid-column: 1 / -1;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content {
+  grid-row: 1/1;
+  grid-column: 2/ 2;
+}
+
+.health-act .modal-container#modal-2 .image-content {
+  width: 100%;
+  width: 482px;
+  height: 100%;
+  height: 334px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .header .image-content img {
+  width: 100%;
+  width: 470px;
+  height: 100%;
+  height: 345px;
+  border-radius: 15px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: baseline; 
+  line-height: 1.2;        
+  position: relative;
+  z-index: 1;
+  gap: 10px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .title p {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.health-act .modal-container#modal-2 .modal-content .title span {
+  color: var(--primary-color);
+}
+
+.health-act .modal-container#modal-2 .modal-content .content {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-rows: ;
+}
+
+.health-act .modal-container#modal-2 .modal-content .grid-1 {
+  grid-row: ;
+  grid-column: ;
+}
+
+.health-act .modal-container#modal-2 .modal-content .grid-2 {
+  grid-row: ;
+  grid-column: ;
+}
+
+.health-act .modal-container#modal-2 .modal-content .list-box {
+  grid-row: ;
+  grid-column: ;
+}
+
+
+/* Opacity of Modals */
+.health-act .modal-container#modal-1 {
+  opacity: 1;
+  display: block;
+}
+
+.health-act .modal-container#modal-2 {
+  opacity: 0;
+  display: none;
+}
+
+.health-act .modal-container#modal-3 {
+  opacity: 0;
+  display: none;
 }

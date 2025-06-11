@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Modal Cards with JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            background: #e60000;
+            color: #fff;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: black;
+        }
+
+        @keyframes fadeIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/60/ea/c6/60eac6b08ab8be2564ba470bc614966e.jpg" alt="Feeding Program">
+        <div class="card-content">
+            <div class="card-title">Feeding Program</div>
+            <button class="read-more" data-modal="modal1">Read More</button>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="https://i.pinimg.com/736x/b5/08/ed/b508ed0d0bceabbd2cec546f2f7285bd.jpg" alt="Nutrition Seminar">
+        <div class="card-content">
+            <div class="card-title">Nutrition Seminar</div>
+            <button class="read-more" data-modal="modal2">Read More</button>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-close="modal1">&times;</span>
+            <h2>Feeding Program</h2>
+            <img src="https://i.pinimg.com/736x/08/c3/52/08c35274599b73b7a4b8c182098fe691.jpg" alt="Feeding Program">
+            <p>This feeding program supports undernourished children and mothers by providing healthy meals and
+                nutrition education.</p>
+            <ul>
+                <li>Free meals for preschoolers</li>
+                <li>Focus on malnourished communities</li>
+                <li>Partnered with health professionals</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" data-close="modal2">&times;</span>
+            <h2>Nutrition Seminar</h2>
+            <img src="https://i.pinimg.com/736x/bb/40/1b/bb401b38562d5d6bd3bf7a4549906fc1.jpg" alt="Nutrition Class">
+            <p>Join our health experts as they discuss food groups, meal planning, and disease prevention through
+                nutrition.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Open modal
+        document.querySelectorAll('.read-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                document.getElementById(modalId).style.display = 'flex';
+            });
+        });
+
+        // Close modal by X button
+        document.querySelectorAll('.close-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const modalId = btn.getAttribute('data-close');
+                document.getElementById(modalId).style.display = 'none';
+            });
+        });
+
+        // Close modal by clicking outside
+        window.addEventListener('click', (e) => {
+            if (e.target.classList.contains('modal')) {
+                e.target.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
