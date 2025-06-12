@@ -213,6 +213,8 @@ header.sticky {
   background-color: var(--primary-color);
   color: white;
   text-decoration: none;
+  transition: box-shadow 0.3s ease;
+  transform: 0.3s ease;
 }
 
 .solid-button:hover {
@@ -547,7 +549,7 @@ header.sticky {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  min-height: 160vh;
+  min-height: 60vh;
   padding: 20px;
 }
 
@@ -1007,11 +1009,11 @@ header.sticky {
   padding: 20px;
 }
 
-.health-act > .title {
+.health-act>.title {
   padding: 50px;
 }
 
-.health-act > .title span {
+.health-act>.title span {
   font-size: 55px;
   font-weight: 700;
 }
@@ -1143,8 +1145,8 @@ header.sticky {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: baseline; 
-  line-height: 1.2;        
+  justify-content: baseline;
+  line-height: 1.2;
   position: relative;
   z-index: 1;
   gap: 10px;
@@ -1185,6 +1187,7 @@ header.sticky {
   align-items: center;
   align-content: center;
   font-size: 14px;
+  font-weight: 500;
 }
 
 .health-act .modal-container#modal-1 .content .grid {
@@ -1241,6 +1244,11 @@ header.sticky {
   width: 1120px;
 }
 
+.health-act .modal-container#modal-2 h3 {
+  letter-spacing: 2px;
+  padding: 10px 0px;
+}
+
 .health-act .modal-container#modal-2 .header {
   display: flex;
   flex-direction: column;
@@ -1251,7 +1259,7 @@ header.sticky {
   display: grid;
   grid-template-columns: 500px 600px;
   grid-template-rows: 1fr 60px 100px;
-  padding: 20px;
+  padding: 20px
 }
 
 .health-act .modal-container#modal-2 .modal-content .header {
@@ -1260,7 +1268,7 @@ header.sticky {
 }
 
 .health-act .modal-container#modal-2 .modal-content .title {
-  grid-row: 2 / -2;
+  grid-row: 2 / -3;
   grid-column: 1 / -1;
 }
 
@@ -1272,6 +1280,12 @@ header.sticky {
 .health-act .modal-container#modal-2 .modal-content .content {
   grid-row: 1/1;
   grid-column: 2/ 2;
+}
+
+.health-act .modal-container#modal-2 .modal-content .list-box {
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  margin-left: 50px;
 }
 
 .health-act .modal-container#modal-2 .image-content {
@@ -1293,8 +1307,8 @@ header.sticky {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: baseline; 
-  line-height: 1.2;        
+  justify-content: baseline;
+  line-height: 1.2;
   position: relative;
   z-index: 1;
   gap: 10px;
@@ -1310,26 +1324,176 @@ header.sticky {
 }
 
 .health-act .modal-container#modal-2 .modal-content .content {
-  display: grid;
-  grid-template-columns: ;
-  grid-template-rows: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
-.health-act .modal-container#modal-2 .modal-content .grid-1 {
-  grid-row: ;
-  grid-column: ;
+.health-act .modal-container#modal-2 .modal-content .content .box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.health-act .modal-container#modal-2 .modal-content .grid-2 {
-  grid-row: ;
-  grid-column: ;
+.health-act .modal-container#modal-2 .modal-content .box-1 .list {
+  font-weight: 500;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .box {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .box p {
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .grid-1 .box .red-box {
+  position: absolute;
+  top: -10%;
+  right: 50%;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .grid-2 .box .red-box#one {
+  position: absolute;
+  top: -13%;
+  left: 40%;
+}
+
+.health-act .modal-container#modal-2 .modal-content .content .grid-2 .box .red-box#two {
+  position: absolute;
+  left: -9%;
+  bottom: 25%;
 }
 
 .health-act .modal-container#modal-2 .modal-content .list-box {
-  grid-row: ;
-  grid-column: ;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  width: 100%;
+  width: 550px;
 }
 
+.health-act .modal-container#modal-2 .modal-content .list-box {
+  display: flex;
+  justify-content: center;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .info {
+  width: 100%;
+  width: 500px;
+}
+
+.health-act .modal-container#modal-2 .modal-content .info .box-1 {
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.health-act .modal-container#modal-3 {
+  width: 100%;
+  width: 1120px;
+  padding: 20px;
+}
+
+.health-act .modal-container#modal-3 h3 {
+  letter-spacing: 2px;
+  padding: 10px 0px;
+}
+
+.health-act .modal-container#modal-3 .modal-content {
+  display: grid;
+  grid-template-columns: 500px 600px;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .header img {
+  width: 100%;
+  width: 492px;
+  height: 100%;
+  height: 328px;
+  border-radius: 15px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: baseline;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  gap: 10px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .title p {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.health-act .modal-container#modal-3 .modal-content .title span {
+  color: var(--primary-color);
+}
+
+.health-act .modal-container#modal-3 .modal-content .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid {
+  display: grid;
+  grid-template-rows: 100px 200px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-1 {
+  grid-row: 1 / 1;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-2 {
+  grid-row: 2 / 2;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-1 p {
+  font-weight: 500;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-2 .box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-2 .box #one{
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.health-act .modal-container#modal-3 .modal-content .content .grid .box-2 .box #two{
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+}
 
 /* Opacity of Modals */
 .health-act .modal-container#modal-1 {
@@ -1338,11 +1502,11 @@ header.sticky {
 }
 
 .health-act .modal-container#modal-2 {
-  opacity: 0;
-  display: none;
+  opacity: 1;
+  display: block;
 }
 
 .health-act .modal-container#modal-3 {
-  opacity: 0;
-  display: none;
+  opacity: 1;
+  display: block;
 }

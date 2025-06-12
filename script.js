@@ -121,6 +121,7 @@ setupHoverCard(
   `<em>(no consultation on weekends)</em`
 )
 
+/*
 function setupHoverCard(cardId, summaryHTML, detailHTML) {
   const card = document.getElementById(cardId);
   const text = card.querySelector(".card-text");
@@ -134,6 +135,7 @@ function setupHoverCard(cardId, summaryHTML, detailHTML) {
     text.innerHTML = summaryHTML;
   });
 }
+*/
 
 function setupClickCard(cardId, summaryHTML, detailHTML) {
   const card = document.getElementById(cardId);
