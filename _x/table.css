@@ -1,0 +1,25 @@
+html {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    --primary-color: #eb0000;
+    --primary-color-hover: #c70000;
+}
+
+.week-schedule {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
