@@ -206,7 +206,7 @@ setupPartialToggle("solid-button", "toggle-section", {
             <div class="modal-content">
                 <div class="header">
                     <div class="img-content">
-                        <img src="/images/temp.jpg" alt="Family Planning Counseling">
+                        <img src="./images/temp.jpg" alt="Family Planning Counseling">
                         <div class="title">
                             <p><span>FAMILY </span></p>
                             <p><span>PLANNING </span></p>
@@ -313,7 +313,7 @@ setupPartialToggle("solid-button", "toggle-section", {
             <div class="modal-content">
                 <div class="header">
                     <div class="image-content">
-                        <img src="/images/temp.jpg" alt="Fedding Program">
+                        <img src="./images/temp.jpg" alt="Fedding Program">
                     </div>
                 </div>
                 <div class="title">
@@ -454,7 +454,7 @@ setupPartialToggle("solid-button", "toggle-section", {
             <div class="modal-content">
                 <div class="header">
                     <div class="img-content">
-                        <img src="/images/temp.jpg" alt="Zumba Sessions">
+                        <img src="./images/temp.jpg" alt="Zumba Sessions">
                     </div>
                     <div class="title">
                         <p><span>ZUMBA</span> SESSIONS</p>
